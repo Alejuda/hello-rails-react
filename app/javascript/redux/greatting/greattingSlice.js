@@ -6,14 +6,14 @@ const API_URL = '/api/greetings/random_greeting';
 export const getGreatting = createAsyncThunk('greatting/getGreatting', async () => {
   try {
     const response = await axios.get(API_URL);
-    return response.data.greatting;
+    return response.data;
   } catch (error) {
-    return error.message;
+    return error;
   }
 });
 
 const initialState = {
-  greatting: '',
+  message: '',
 };
 
 const greattingSlice = createSlice({
@@ -23,8 +23,7 @@ const greattingSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(getGreatting.fulfilled, (state, action) => {
-        message = action.payload
-        state.name = message;
+        state.message = action.payload;
       })
   },
 });

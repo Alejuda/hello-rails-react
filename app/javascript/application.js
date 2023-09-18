@@ -4,8 +4,8 @@
 
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-// import { Provider } from 'react-redux';
-// import store from './redux/store';
+import { Provider } from 'react-redux';
+import store from './redux/store';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import RandomGreeting from './routes/RandomGreeting';
@@ -14,7 +14,7 @@ import App from './components/App';
 
 const root = createRoot(document.getElementById('root'));
 root.render(
-  // <Provider store={store}>
+  <Provider store={store}>
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -23,5 +23,5 @@ root.render(
         </Route>
       </Routes>
     </Router>
-  // </Provider>
+  </Provider>
 );
