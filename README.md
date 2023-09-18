@@ -126,6 +126,15 @@ You can run tests with the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
+<!-- FUTURE FEATURES -->
+
+## Future Features <a name="future-features"></a>
+
+- **Proper Styling**
+- **Add Public endpoint to get a random greeting**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Authors <a name="authors"></a>
 
 👤 **Ignacio Fino**
