@@ -2,7 +2,7 @@ import React from 'react';
 
 function App() {
   return (
-      <h1>Helo world!</h1>
+      <h1>This is the index component</h1>
     );
 }
 
