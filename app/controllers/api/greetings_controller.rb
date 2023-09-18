@@ -7,7 +7,7 @@ module Api
       if random_message
         render json: { greeting: random_message.content }
       else
-        render json: { error: 'No greetings available' }, status: :not_found
+        render json: { error: 'No greeting found' }, status: :not_found
       end
     end
   end
